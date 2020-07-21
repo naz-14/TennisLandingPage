@@ -15,7 +15,7 @@
             @media screen and ( min-width: 768px )
               height: auto
             img 
-              height: 180px
+              height: auto
               @media screen and ( min-width: 480px )
                 height: auto
             .option-text-container
@@ -46,6 +46,7 @@
                 color: white
         .swiper-container.swiper-articles
           flex-basis: 50%
+          max-height: 100%
           .swiper-slide
             margin-right: 10px
             margin-left: 0
@@ -59,8 +60,9 @@
                 top: 8%
                 left: 8%
                 background-color: $yellow
-                padding: .3em
+                padding: .5em
                 border-radius: 100%
+                line-height: 8.906px
                 @media screen and ( min-width: 768px )
                   padding: 1em
                   top: 13%
@@ -76,6 +78,7 @@
               .article
                 &::after
                   content: '3'
+                  
                   
       .swiper-pagination-bullets
         position: absolute
@@ -102,6 +105,7 @@
           left: 20%
         i 
           font-size: 15px
+          line-height: 5.5px
           border: 1px solid white
           border-radius: 100%
           color: white
@@ -116,6 +120,7 @@
         left: 27%
         i 
           font-size: 15px
+          line-height: 5.5px
           border-radius: 100%
           color: white
           padding: .6em

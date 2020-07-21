@@ -270,8 +270,8 @@ img {
 
 .history {
   background-color: #f3f4f8;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 480px) {
@@ -387,7 +387,6 @@ img {
 
 .history .wrapper .content .right-container .center .subtittle {
   font-size: 20px;
-  font-family: "HevelticaNeueBd";
   margin-bottom: 10px;
   color: #1e2335;
 }
@@ -477,7 +476,7 @@ img {
 }
 
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container img {
-  height: 180px;
+  height: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -538,6 +537,7 @@ img {
 
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-container.swiper-articles {
   flex-basis: 50%;
+  max-height: 100%;
 }
 
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-container.swiper-articles .swiper-slide {
@@ -557,8 +557,9 @@ img {
   top: 8%;
   left: 8%;
   background-color: #cbe346;
-  padding: .3em;
+  padding: .5em;
   border-radius: 100%;
+  line-height: 8.906px;
 }
 
 @media screen and (min-width: 768px) {
@@ -633,6 +634,7 @@ img {
 
 .products .sliders-container .swiper-container .swiper-button-prev i {
   font-size: 15px;
+  line-height: 5.5px;
   border: 1px solid white;
   border-radius: 100%;
   color: white;
@@ -657,6 +659,7 @@ img {
 
 .products .sliders-container .swiper-container .swiper-button-next i {
   font-size: 15px;
+  line-height: 5.5px;
   border-radius: 100%;
   color: white;
   padding: .6em;
