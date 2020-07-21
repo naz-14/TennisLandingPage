@@ -350,7 +350,7 @@ img {
 }
 
 .history .wrapper .content .right-container {
-  flex-basis: calc( 100% - 44px);
+  flex-basis: calc( 100% - 64px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -376,7 +376,7 @@ img {
 }
 
 .history .wrapper .content .right-container .center {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
@@ -475,6 +475,13 @@ img {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container {
+    flex: 0 0 530px;
+    height: 468px;
+  }
+}
+
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container img {
   height: auto;
 }
@@ -514,7 +521,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container .option-text-container .option-tittle {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -535,20 +542,47 @@ img {
   color: white;
 }
 
+@media screen and (min-width: 992px) {
+  .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container .option-text-container .option-description {
+    font-size: 18px;
+    line-height: 30px;
+    width: 80%;
+    padding-top: 10px;
+  }
+}
+
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-container.swiper-articles {
   flex-basis: 50%;
   max-height: 100%;
 }
 
+@media screen and (min-width: 992px) {
+  .products .sliders-container .swiper-container .swiper-wrapper .swiper-container.swiper-articles {
+    max-height: 100%;
+    flex: 1 1 auto;
+  }
+}
+
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-container.swiper-articles .swiper-slide {
   margin-right: 10px;
   margin-left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-container.swiper-articles .swiper-slide .article {
   display: flex;
   align-items: center;
   position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .products .sliders-container .swiper-container .swiper-wrapper .swiper-container.swiper-articles .swiper-slide .article {
+    margin-left: 20px;
+    width: 288px;
+    height: 344px;
+  }
 }
 
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-container.swiper-articles .swiper-slide .article::after {
@@ -576,6 +610,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  .products .sliders-container .swiper-container .swiper-wrapper .swiper-container.swiper-articles .swiper-slide .article img {
+    max-width: 100%;
+  }
+}
+
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-container.swiper-articles .swiper-slide:nth-child(2) .article::after {
   content: '2';
 }
@@ -597,9 +637,10 @@ img {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .products .sliders-container .swiper-container .swiper-pagination-bullets {
-    left: 20%;
+    left: 13%;
+    top: 58%;
   }
 }
 
@@ -626,9 +667,9 @@ img {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .products .sliders-container .swiper-container .swiper-button-prev {
-    left: 20%;
+    left: 14%;
   }
 }
 
@@ -647,6 +688,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .products .sliders-container .swiper-container .swiper-button-prev i {
+    padding: 25px;
+  }
+}
+
 .products .sliders-container .swiper-container .swiper-button-prev::after {
   content: '';
 }
@@ -655,6 +702,12 @@ img {
   position: absolute;
   top: 80%;
   left: 27%;
+}
+
+@media screen and (min-width: 1280px) {
+  .products .sliders-container .swiper-container .swiper-button-next {
+    left: 20%;
+  }
 }
 
 .products .sliders-container .swiper-container .swiper-button-next i {
@@ -669,6 +722,12 @@ img {
 @media screen and (min-width: 768px) {
   .products .sliders-container .swiper-container .swiper-button-next i {
     padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products .sliders-container .swiper-container .swiper-button-next i {
+    padding: 25px;
   }
 }
 
