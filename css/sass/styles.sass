@@ -1,0 +1,68 @@
+$yellow: #cbe346
+$blue: #282e47
+$gray: #787878
+$lightGray: #f3f4f8
+$darkText: #1e2335
+@font-face 
+  font-family: 'HevelticaNeue'
+  src: url(../fonts/HelveticaNeue.ttf)
+
+@font-face 
+  font-family: 'HevelticaNeueBd'
+  src: url(../fonts/HelveticaNeueBd.ttf)
+
+@font-face
+  font-family: 'HevelticaNeueMd';
+  src: url('../fonts/HelveticaNeueMedium.ttf')
+
+$normalFont: 'HevelticaNeue'
+$boldFont: 'HevelticaNeueBd'
+$mdFont : 'HevelticaNeueMd'
+
+html
+  box-sizing: border-box
+  font-family: 'HevelticaNeue'
+
+*, *:before, *:after
+  box-sizing: inherit
+
+h1,h2,h3,p
+  margin: 0
+  padding: 0
+
+img
+  max-width: 100%
+.wrapper
+  max-width: 315px
+  margin: 0 auto
+  width: 95%
+  @media screen and ( min-width: 480px )
+    max-width: 600px
+  @media screen and ( min-width: 992px )
+    max-width: 100%
+.btn
+  border-radius: 26.5px
+  text-decoration: none
+  padding: .8em 1em
+  font-family: $boldFont
+  font-size: 8px
+  letter-spacing: 1.01px
+  cursor: pointer
+  @media screen and ( min-width: 480px )
+    font-size: 10px
+  @media screen and ( min-width: 992px )
+    font-size: 13px
+    padding: 15px 30px
+  span 
+    margin-left: 5px
+    @media screen and ( min-width: 992px )
+      margin-left: 50px
+.btn-prim
+  color: white
+  border: 1px solid white
+.btn-sec
+  color: $blue
+  border: 1px solid $blue
+@import _header
+@import _history
+@import _products

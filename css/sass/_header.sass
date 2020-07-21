@@ -1,0 +1,96 @@
+.site-nav
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  padding-top: 8px
+  @media screen and ( min-width: 480px )
+    padding-top: 16px
+  @media screen and ( min-width: 992px )
+    padding-top: 0
+  .wrapper
+    display: flex
+    justify-content: space-between
+    .logo
+      display: none
+      @media screen and ( min-width: 992px )
+        display: inline-block
+        padding: 25px 25px 25px 0
+        img
+          width: 37px
+    .hamburguer
+      width: 25px
+      height: 17px
+      @media screen and ( min-width: 992px )
+        display: none
+      a
+        width: 100%
+        i
+          color: white
+          font-size: 25px
+    .nav
+      position: absolute
+      transform: translate(-400%)
+      @media screen and ( min-width: 992px )
+        position: relative
+        transform: translate(0)
+        justify-self: flex-start
+        display: flex
+        padding-top: 45px
+        margin-left: 67px
+        width: 100%
+      li 
+        text-decoration: none
+        list-style: none
+        margin-right: 50px
+        &:last-of-type
+          margin-right: 0
+        a 
+          color: white
+          font-size: 16px
+          letter-spacing: 1.5px
+          text-decoration: none
+          &.active
+            font-family: $boldFont
+    .language
+      display: none
+      @media screen and ( min-width: 992px )
+        display: block
+        flex: 0 0 50px
+        justify-self: flex-end
+        padding-top: 45px
+        transform: translate(-30%)
+      a 
+        text-decoration: none
+        color: white
+
+.hero
+  background-image: url(../img/hero.png)
+  background-size: cover
+  height: 206px
+  @media screen and ( min-width: 480px )
+    height: 400px
+  @media screen and ( min-width: 992px )
+    height: 785px
+  .wrapper
+    height: 100%
+    display: flex
+    align-items: center
+    .content
+      width: 80%
+      @media screen and ( min-width: 992px )
+        width: 50%
+        transform: translate(18%,0)
+      .tittle
+        font-size: 20px
+        color: white
+        margin-bottom: 16px
+        @media screen and ( min-width: 480px )
+          font-size: 40px
+          margin-bottom: 30px
+        @media screen and ( min-width: 992px )
+          font-size: 53px
+          line-height: 68px
+        span 
+          color: $yellow
+          font-family: $boldFont

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Tennis</title>
+  </head>
+  <body>
+    <div class="site-nav">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="img/logo.svg" alt="Logo Tennis" />
+        </div>
+        <div class="hamburguer">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+        <nav class="nav es">
+          <li><a class="option active" href="#">Inicio</a></li>
+          <li><a class="option" href="#">Acerca de Nosotros</a></li>
+          <li><a class="option" href="#">Historia</a></li>
+          <li><a class="option" href="#">Contacto</a></li>
+        </nav>
+        <div class="language es">
+          <a href="#" id="es">ES</a>
+          <a href="#" id="en">EN</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="wrapper">
+        <div class="content hero-content es">
+          <h1 class="tittle">
+            Las mejores raquetas para Jugar <span>Tennis</span>
+          </h1>
+          <a href="#" class="btn btn-prim"
+            >Acerca de nosotros <span>&#8594;</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <section class="history">
+      <div class="wrapper">
+        <div class="content history-content es">
+          <div class="left">
+            <p>TENNIS</p>
+          </div>
+          <div class="right-container">
+            <div class="center">
+              <h2 class="subtittle">Raquetas.Accesorios.<br />Pelotas.</h2>
+              <p class="description">
+                Conoce nuestras raquetas y aprende a jugar Tennis cómo un
+                profesional.
+              </p>
+            </div>
+            <div class="right">
+              <a href="#" class="btn btn-sec btn-historia"
+                >Historia <span>&#8594;</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="products">
+      <div class="sliders-container">
+        <!-- Slider main container -->
+        <div class="swiper-container" id="productSwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="option-image-container">
+                <img src="img/ball.png" alt="Raquetas" />
+                <div class="option-text-container">
+                  <h2 class="option-tittle">
+                    Nuestras <br /><span>Raquetas</span>
+                  </h2>
+                  <p class="option-description">
+                    Conoce nuestras raquetas y aprende a jugar Tennis cómo un
+                    profesional.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-container swiper-articles" id="swiperArticles">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="article">
+                      <img src="img/racket.png" alt="Raqueta modelo 1" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="article">
+                      <a href="#"><img src="img/racket.png" alt="" /></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="article">
+                      <a href="#"><img src="img/racket.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="option-image-container">
+                <img src="img/ball.png" alt="Otro producto" />
+                <div class="option-text-container">
+                  <h2 class="option-tittle">
+                    Otro <br /><span>producto</span>
+                  </h2>
+                  <p class="option-description">
+                    Otra descripcion de un producto
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-container swiper-articles" id="swiperArticles">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="article">
+                      <img src="img/racket.png" alt="Raqueta modelo 1" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="article">
+                      <a href="#"><img src="img/racket.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <i class="fas fa-caret-left"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fas fa-caret-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

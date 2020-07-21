@@ -1,0 +1,90 @@
+.history
+  background-color: $lightGray
+  padding-top: 30px
+  padding-bottom: 40px
+  @media screen and ( min-width: 480px )
+    padding-top: 40px
+  @media screen and ( min-width: 992px )
+    padding-top: 75px
+    padding-bottom: 67px
+  .wrapper
+    @media screen and ( min-width: 992px )
+      display: flex
+      justify-content: center
+    .content
+      display: flex
+      justify-content: space-between
+      @media screen and ( min-width: 992px )
+        width: 100%
+      .left
+        flex-basis: 34px
+        @media screen and ( min-width: 480px )
+          flex-basis: 60px
+        @media screen and ( min-width: 992px )
+          text-align: right
+          flex-basis: 20%
+          padding-top: 10px
+        @media screen and ( min-width: 1200px )
+          flex-basis: 25%
+        p
+          color: $yellow
+          font-size: 8px
+          letter-spacing: 1.87px
+          font-family: $mdFont
+          line-height: 30px
+          @media screen and ( min-width: 480px )
+            font-size: 13px
+          @media screen and ( min-width: 992px )
+            font-size: 15px
+      .right-container
+        flex-basis: calc( 100% - 44px )
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @media screen and ( min-width: 480px )
+          flex-basis: calc( 100% - 60px )
+        @media screen and ( min-width: 992px )
+          flex-basis: calc(80% - 40px)
+          flex-direction: row
+        @media screen and ( min-width: 1200px )
+          flex-basis: calc( 75% - 50px )
+        .center
+          margin-bottom: 20px
+          @media screen and ( min-width: 992px )
+            flex-basis: 555px
+          .subtittle
+            font-size: 20px
+            font-family: $boldFont
+            margin-bottom: 10px
+            color: $darkText
+            @media screen and ( min-width: 480px )
+              font-size: 30px
+              margin-bottom: 15px
+            @media screen and ( min-width: 992px )
+              font-size: 50px
+          .description
+            font-size: 15px
+            color: $gray
+            line-height: 32px
+            letter-spacing: 0.51px
+            @media screen and ( min-width: 480px )
+              font-size: 18px
+            @media screen and ( min-width: 992px )
+              width: 393px
+              font-size: 18px
+              letter-spacing: 0.51px
+              line-height: 32px
+        .right
+          @media screen and ( min-width: 992px )
+            transform: translate(-80%,-207%)
+            align-self: flex-end
+          .btn-historia
+            font-family: $mdFont
+            
+            @media screen and ( min-width: 992px )
+              padding: 10px 20px
+            @media screen and ( min-width: 1200px )
+              padding: 15px 30px
+
+
+      
