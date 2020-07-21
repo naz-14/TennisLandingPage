@@ -4,6 +4,8 @@
   left: 0
   right: 0
   padding-top: 8px
+  padding-bottom: 15px
+  z-index: 2000
   @media screen and ( min-width: 480px )
     padding-top: 16px
   @media screen and ( min-width: 992px )
@@ -19,8 +21,6 @@
         img
           width: 37px
     .hamburguer
-      width: 25px
-      height: 17px
       @media screen and ( min-width: 992px )
         display: none
       a
@@ -31,6 +31,14 @@
     .nav
       position: absolute
       transform: translate(-400%)
+      transition: all .5s ease-out
+      &.active
+        transform: translate(0)
+        top: 0
+        left: 0
+        background-color: $yellow
+        width: 50%
+        height: 100vh
       @media screen and ( min-width: 992px )
         position: relative
         transform: translate(0)
@@ -39,19 +47,42 @@
         padding-top: 45px
         margin-left: 67px
         width: 100%
+        &.active
+          top: auto
+          left: auto
+          background-color: transparent
+          width: 100%
+          height: auto
       li 
+        padding: 20px 16px
+        text-align: center
+        text-transform: uppercase
         text-decoration: none
         list-style: none
-        margin-right: 50px
-        &:last-of-type
-          margin-right: 0
+        @media screen and ( min-width: 992px )
+          padding: 0
+          text-align: left
+          text-transform: none
+          margin-right: 50px
+          #btnCloseMenu
+            display: none
+          &:last-of-type
+            margin-right: 0
         a 
-          color: white
+          color: $blue
           font-size: 16px
           letter-spacing: 1.5px
           text-decoration: none
+          transition: all .5s linear
+          @media screen and ( min-width: 992px )
+            color: white
           &.active
             font-family: $boldFont
+          &:hover
+            color: white
+            font-family: $boldFont
+            @media screen and ( min-width: 992px )
+              color: $yellow
     .language
       display: none
       @media screen and ( min-width: 992px )
@@ -63,15 +94,26 @@
       a 
         text-decoration: none
         color: white
-
+        transition: all .5s linear
+        &:hover
+          color: $yellow
 .hero
   background-image: url(../img/hero.png)
   background-size: cover
   height: 206px
+  position: relative
   @media screen and ( min-width: 480px )
     height: 400px
   @media screen and ( min-width: 992px )
     height: 785px
+    &::after
+      content: ''
+      width: 2px
+      height: 785px
+      position: absolute
+      top: 0
+      left: 8%
+      background-color: white
   .wrapper
     height: 100%
     display: flex

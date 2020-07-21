@@ -3,6 +3,7 @@ $blue: #282e47
 $gray: #787878
 $lightGray: #f3f4f8
 $darkText: #1e2335
+$blueLinks: #2b3049
 @font-face 
   font-family: 'HevelticaNeue'
   src: url(../fonts/HelveticaNeue.ttf)
@@ -60,10 +61,21 @@ img
 .btn-prim
   color: white
   border: 1px solid white
+  transition: all .5s linear
+  &:hover
+    color: $yellow
+    border-color: $yellow
 .btn-sec
   color: $blue
   border: 1px solid $blue
+  transition: all .5s linear
+  &:hover
+    background-color: $blue
+    color: white
+
 
 @import _header
 @import _history
 @import _products
+@import _baner
+@import _footer

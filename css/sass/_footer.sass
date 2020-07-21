@@ -1,0 +1,51 @@
+.site-footer
+  background-color: $yellow
+  margin-top: -4px
+  padding: 24px 0 20px 0
+  @media screen and ( min-width: 992px )
+    padding: 64px 0 58px 0
+  .wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    @media screen and ( min-width: 992px )
+      padding: 0 68px 0 78px
+    .navs-wrapper
+      flex: 0 1 451px
+      display: flex
+      flex-direction: column
+      align-items: left
+      .footer-nav
+        display: none
+        @media screen and ( min-width: 992px )
+          display: flex
+          margin-bottom: 15px
+          justify-content: space-between
+          li 
+            list-style: none
+            a
+              text-decoration: none
+              color: $blueLinks
+              font-family: $boldFont
+              font-size: 13px
+              letter-spacing: 1.14px
+              transition: all .5s linear
+              &:hover
+                color: white
+      .social-icons
+        display: flex
+        li 
+          margin-right: 11px
+          list-style: none
+          max-width: 23px
+          a 
+            img 
+              width: 100%
+              &:hover
+                filter: brightness(.3)
+    .logo-wrapper
+      max-width: 55px
+      img
+        @media screen and ( min-width: 992px )
+          width: 55px
+          height: 55px

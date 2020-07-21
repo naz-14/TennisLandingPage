@@ -18,7 +18,7 @@
               flex: 0 0 530px
               height: 468px
             img 
-              height: auto
+              height: 180px
               @media screen and ( min-width: 480px )
                 height: auto
             .option-text-container
@@ -72,6 +72,10 @@
                 margin-left: 20px
                 width: 288px
                 height: 344px
+                cursor: pointer
+                &:hover
+                  transform: scale(1.2)
+                  z-index: 1000
               &::after
                 content: '1'
                 position: absolute
@@ -90,6 +94,7 @@
                   width: 90%
                   @media screen and ( min-width: 992px )
                     max-width: 100%
+                    width: 100%
             &:nth-child(2)
               .article
                 &::after
