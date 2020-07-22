@@ -55,7 +55,7 @@ en.addEventListener("click", (e) => {
 });
 
 function init() {
-  loadsLanguage("EN");
+  loadsLanguage("ES");
 }
 
 function loadsLanguage(lang) {
