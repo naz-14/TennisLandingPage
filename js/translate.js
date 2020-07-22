@@ -1,91 +1,79 @@
-const navDiv = document.querySelector(".nav"),
-  spanish = document.querySelector("#es"),
-  english = document.querySelector("#en"),
-  hero = document.querySelector(".hero"),
-  history = document.querySelector(".right-container"),
-  nuestrasRaquetas = document.querySelector("#nuestrasRaquetas"),
-  footerNav = document.querySelector(".footer-nav");
+var WORDS_EN = {
+  text1: "Home",
+  text2: "About Us",
+  text3: "History",
+  text4: "Contact",
+  text5: "Greatest rackets for play <span> Tennis</span>",
+  text6: "About Us <span>&#8594</span>",
+  text7: "Rackets.Accesories.<br>Balls.",
+  text8: "Discover Our rackets and learn to play Tennis like a proffesional",
+  text9: "History <span>&#8594</span>",
+  text10: `Our <br><span>Rackets</span>`,
+  text12: "Discover Our rackets and learn to play Tennis like a proffesional",
+  text13: "Another <br><span>Product</span>",
+  text15: "Another product description",
+  text16: "Home",
+  text17: "About Us",
+  text18: "History",
+  text19: "Contact",
+};
 
-spanish.addEventListener("click", spanishContent);
-english.addEventListener("click", englishContent);
+var WORDS_ES = {
+  text1: "Inicio",
+  text2: "Acerca De Nosotros",
+  text3: "Historia",
+  text4: "Contacto",
+  text5: "Las mejores raquetas para Jugar <span>Tennis</span>",
+  text6: "Acerca de nosotros <span>&#8594</span>",
+  text7: "Raquetas.Accesorios.<br>Pelotas.",
+  text8:
+    "Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional.",
+  text9: "Historia <span>&#8594</span>",
+  text10: "Nuestras <br><span>Raquetas</span>",
+  text12:
+    "Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional.",
+  text13: "Otro <br><span>Producto</span>",
+  text15: "Otra descripcion del producto",
+  text16: "Inicio",
+  text17: "Acerca de Nosotros",
+  text18: "Historia",
+  text19: "Contacto",
+};
 
-function spanishContent(e) {
-  e.preventDefault();
-  navDiv.innerHTML = `<li><a class="option active" href="#">Inicio</a></li>
-          <li><a class="option" href="#">Acerca de Nosotros</a></li>
-          <li><a class="option" href="#">Historia</a></li>
-          <li><a class="option" href="#">Contacto</a></li>
-          <li><a href="#" class="option btn-close" id="btnCloseMenu">X</a></li>`;
-  hero.innerHTML = `<div class="wrapper">
-        <div class="content hero-content es">
-          <h1 class="tittle">
-            Las mejores raquetas para Jugar <span>Tennis</span>
-          </h1>
-          <a href="#" class="btn btn-prim"
-            >Acerca de nosotros <span>&#8594;</span></a
-          >
-        </div>`;
-  history.innerHTML = `<div class="center">
-              <h2 class="subtittle">Raquetas.Accesorios.<br />Pelotas.</h2>
-              <p class="description">
-                Conoce nuestras raquetas y aprende a jugar Tennis cómo un
-                profesional.
-              </p>
-            </div>
-            <div class="right">
-              <a href="#" class="btn btn-sec btn-historia"
-                >Historia <span>&#8594;</span></a
-              >
-            </div>`;
-  nuestrasRaquetas.innerHTML = `<h2 class="option-tittle">
-                    Nuestras <br /><span>Raquetas</span>
-                  </h2>
-                  <p class="option-description">
-                    Conoce nuestras raquetas y aprende a jugar Tennis cómo un
-                    profesional.
-                  </p>`;
-  footerNav.innerHTML = `<li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de Nosotros</a></li>
-            <li><a href="#">Historia</a></li>
-            <li><a href="#">Contacto</a></li>`;
+window.addEventListener("DOMContentLoaded", init);
+
+const es = document.querySelector("#es");
+const en = document.querySelector("#en");
+
+es.addEventListener("click", (e) => {
+  e.stopPropagation();
+  loadsLanguage("ES");
+});
+en.addEventListener("click", (e) => {
+  e.stopPropagation();
+  loadsLanguage("EN");
+});
+
+function init() {
+  loadsLanguage("EN");
 }
-function englishContent(e) {
-  e.preventDefault();
-  navDiv.innerHTML = `<li><a class="option active" href="#">Home</a></li>
-          <li><a class="option" href="#">About Us</a></li>
-          <li><a class="option" href="#">History</a></li>
-          <li><a class="option" href="#">Contact</a></li>
-          <li><a href="#" class="option btn-close" id="btCloseMenu">X</a></li>`;
-  hero.innerHTML = `<div class="wrapper">
-        <div class="content hero-content es">
-          <h1 class="tittle">
-            The best rackets to play <span>Tennis</span>
-          </h1>
-          <a href="#" class="btn btn-prim"
-            >About Us<span>&#8594;</span></a
-          >
-        </div>`;
-  history.innerHTML = `<div class="center">
-              <h2 class="subtittle">Rackets.Accesories<br />Balls.</h2>
-              <p class="description">
-                Discover our rackets and learn to play Tennis like a
-                professional.
-              </p>
-            </div>
-            <div class="right">
-              <a href="#" class="btn btn-sec btn-historia"
-                >History <span>&#8594;</span></a
-              >
-            </div>`;
-  nuestrasRaquetas.innerHTML = `<h2 class="option-tittle">
-                    Our <br /><span>Rackets</span>
-                  </h2>
-                  <p class="option-description">
-                    Discover our rackets and learn to play Tennis like a
-                    professional.
-                  </p>`;
-  footerNav.innerHTML = `<li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Contact</a></li>`;
+
+function loadsLanguage(lang) {
+  const content = document.querySelectorAll(".lang");
+  content.forEach(function (content) {
+    let LangVar = content.id;
+    let text = window["WORDS_" + lang][LangVar];
+    if (
+      LangVar == "text5" ||
+      LangVar == "text6" ||
+      LangVar == "text7" ||
+      LangVar == "text9" ||
+      LangVar == "text10" ||
+      LangVar == "text13"
+    ) {
+      content.innerHTML = text;
+    } else {
+      content.textContent = text;
+    }
+  });
 }
