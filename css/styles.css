@@ -74,6 +74,7 @@ img {
 
 .btn span {
   margin-left: 5px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -222,7 +223,7 @@ img {
   font-size: 16px;
   letter-spacing: 1.5px;
   text-decoration: none;
-  transition: all .5s linear;
+  transition: all .3s linear;
 }
 
 @media screen and (min-width: 992px) {
@@ -263,7 +264,7 @@ img {
 .site-nav .wrapper .language a {
   text-decoration: none;
   color: white;
-  transition: all .5s linear;
+  transition: all .3s linear;
 }
 
 .site-nav .wrapper .language a:hover {
@@ -459,7 +460,7 @@ img {
 }
 
 .history .wrapper .content .right-container .center .subtittle {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
   color: #1e2335;
 }
@@ -478,7 +479,7 @@ img {
 }
 
 .history .wrapper .content .right-container .center .description {
-  font-size: 15px;
+  font-size: 18px;
   color: #787878;
   line-height: 32px;
   letter-spacing: 0.51px;
@@ -557,6 +558,7 @@ img {
 
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container img {
   height: 180px;
+  filter: brightness(0.6);
 }
 
 @media screen and (min-width: 480px) {
@@ -592,6 +594,12 @@ img {
   color: white;
 }
 
+@media screen and (min-width: 480px) {
+  .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container .option-text-container .option-tittle {
+    font-size: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container .option-text-container .option-tittle {
     font-size: 40px;
@@ -613,6 +621,19 @@ img {
 .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container .option-text-container .option-description {
   font-size: 10px;
   color: white;
+}
+
+@media screen and (min-width: 480px) {
+  .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container .option-text-container .option-description {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products .sliders-container .swiper-container .swiper-wrapper .swiper-slide .option-image-container .option-text-container .option-description {
+    font-size: 16px;
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 992px) {
