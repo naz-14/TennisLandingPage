@@ -165,6 +165,7 @@ img {
   position: absolute;
   transform: translate(-400%);
   transition: all .5s ease-out;
+  height: 100vh;
 }
 
 .site-nav .wrapper .nav.active {
@@ -185,6 +186,7 @@ img {
     padding-top: 45px;
     margin-left: 67px;
     width: 100%;
+    height: auto;
   }
   .site-nav .wrapper .nav.active {
     top: auto;
